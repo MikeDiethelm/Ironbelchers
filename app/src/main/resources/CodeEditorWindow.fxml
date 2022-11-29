@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17"
+            fx:controller="ch.zhaw.pm2.ironbelchers.ui.CodeEditorWindowController">
+   <VBox alignment="TOP_CENTER" spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0"
+         AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <Label text="Weapon name:"/>
+      <TextField id="weaponNameTextField" fx:id="weaponNameTextField"/>
+      <Label text="Weapon code:"/>
+      <TextArea id="weaponCodeTextArea" fx:id="weaponCodeTextArea" prefHeight="200.0" VBox.vgrow="ALWAYS"/>
+      <HBox alignment="BOTTOM_CENTER" spacing="5.0">
+         <Button mnemonicParsing="false" onAction="#compilePressed" text="compile and restart"/>
+         <Button mnemonicParsing="false" onAction="#quitPressed" text="quit"/>
+      </HBox>
+   </VBox>
+</AnchorPane>
